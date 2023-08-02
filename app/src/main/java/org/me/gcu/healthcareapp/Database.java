@@ -28,8 +28,8 @@ public class Database extends SQLiteOpenHelper{
     public void register(String username, String email, String password){
         ContentValues cv = new ContentValues();
         cv.put("username", username);
-        cv.put("email", username);
-        cv.put("password", username);
+        cv.put("email", email);
+        cv.put("password", password);
         SQLiteDatabase db = getWritableDatabase();
         db.insert("users", null,cv);
         db.close();

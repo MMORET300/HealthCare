@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 Toast.makeText(getApplicationContext(), "Please enter all details", Toast.LENGTH_SHORT).show();
             } else {
-                if (db.login(uname, pword) == 1) {
+                if (db.login(uname,pword)== 1) {
 
                     Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
