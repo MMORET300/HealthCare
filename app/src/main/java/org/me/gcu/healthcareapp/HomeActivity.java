@@ -1,6 +1,7 @@
 package org.me.gcu.healthcareapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +26,29 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.clear();
+                editor.apply();
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }
         });
+
+        CardView findDoctor = findViewById(R.id.cardFindDoctor);
+        findDoctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(HomeActivity.this, FindDoctorActivity.class));
+
+            }
+        });
+
+
+
+
+
+
+
 
     }
 }
