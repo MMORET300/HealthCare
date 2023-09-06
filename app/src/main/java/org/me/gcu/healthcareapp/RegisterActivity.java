@@ -23,11 +23,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        userNameRegister = findViewById(R.id.userNameRegister);
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
-        confirmPassword = findViewById(R.id.confirmPassword);
-        registerButton = findViewById(R.id.registerButton);
+        userNameRegister = findViewById(R.id.editTextAppAddress);
+        email = findViewById(R.id.editTextFullName);
+        password = findViewById(R.id.editTextAppContactNo);
+        confirmPassword = findViewById(R.id.editTextAppFees);
+        registerButton = findViewById(R.id.editTextBookAppointment);
         tView2 = findViewById(R.id.tView2);
 
         registerButton.setOnClickListener(this);

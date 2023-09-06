@@ -39,7 +39,7 @@
 
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/editTextFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="344dp"
@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <EditText
-        android:id="@+id/userNameRegister"
+        android:id="@+id/editTextAppAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="344dp"
@@ -89,7 +89,7 @@
 
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/editTextAppContactNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="276dp"
@@ -111,7 +111,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/editTextAppFees"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="208dp"
@@ -133,7 +133,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/editTextBookAppointment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="104dp"
